@@ -1,42 +1,51 @@
-# Decentralized Voting DApp
+# 🗳️ Decentralized Voting DApp
 A secure, transparent, and tamper-proof decentralized application for conducting online elections using Ethereum, Solidity, and Web3.js.
 
-#📌 Overview
+## 📌 Overview
 This DApp enables a decentralized voting system where:
 
-Only verified voters can vote.
+- ✅ Only verified voters can vote.
+- ✅ Each user can vote only once.
+- ✅ Votes are stored securely on the Ethereum blockchain.
+- ✅ Results are immutable and transparent to all.
 
-Each user can vote only once.
+## 🚀 Features
+- ✅ Voter Registration  
+- ✅ One-vote-per-user logic  
+- ✅ Real-time vote count display  
+- ✅ Immutable & transparent vote storage  
+- ✅ Smart Contract-based validation  
+- ✅ Simple, responsive Web3 UI  
+- ✅ MetaMask wallet integration
 
-Votes are stored securely on the Ethereum blockchain.
+## 🧪 How to Run
 
-Results are immutable and transparent to all.
+### Prerequisites
+- MetaMask
+- Node.js
+- Ganache or any Ethereum testnet
 
-#🚀 Features
-✅ Voter Registration
-✅ One-vote-per-user logic
-✅ Real-time vote count display
-✅ Immutable & transparent vote storage
-✅ Smart Contract-based validation
-✅ Simple, responsive Web3 UI
-✅ MetaMask wallet integration
+### Steps
+1. Clone this repo:
+```bash
+git clone https://github.com/Bhumihub/decentralised-voting.git
+### Navigate into the project
 
-#🧪 How to Run
-Prerequisites:
-MetaMask
+```bash
+cd decentralised-voting
+Compile and Deploy the Smart Contract
+✅ Option 1: Use Remix IDE
+Open Voting.sol in Remix
 
-Node.js
+Compile and deploy using "Injected Web3" (connected to MetaMask)
 
-Ganache or any testnet
-
-Steps:
-1.Clone this repo
-**git clone https://github.com/your-username/voting-dapp.git**
-2.Compile and deploy the contract using Remix IDE or Hardhat
-3. Serve frontend
-
-bash-
+✅ Option 2: Using Hardhat (if configured)
+bash
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network localhost
+🚀 Run the Frontend
+bash
 cd frontend
-npx http-server 
+npx http-server .
+Now open your browser and connect MetaMask to the same network
 
-34.Open browser and connect MetaMask
